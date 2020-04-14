@@ -1,0 +1,27 @@
+class:
+  class_name: 友情链接
+  link_list:
+    1:
+      name: BrantShi
+      link: http://brantshi.github.io/
+      avatar: /img/brantshi.jpg
+      descr: xxxxxxx
+    2:
+      name: zhy
+      link: https://zhychestercheung.github.io/
+      avatar: /img/zhy.jpg
+      descr: 欢迎大家给我留言😎
+
+#  class2:
+#    class_name: 链接无效
+#    link_list:
+#      1:
+#        name: 梦xxx
+#        link: https://blog.xxx.com
+#        avatar: https://xxxx/avatar.png
+#        descr: xxxx
+#      2:
+#        name: xx
+#        link: https://www.axxxx.cn/
+#        avatar: https://x
+#        descr: xx
