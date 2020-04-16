@@ -611,7 +611,7 @@ instantpage:
 # https://github.com/vinta/pangu.js
 # 中英文之間添加空格
 pangu:
-  enable: true
+  enable: false
   field: page # page/post
 
 # Note (Bootstrap Callout)

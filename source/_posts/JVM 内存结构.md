@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JVM内存结构
+title: JVM 内存结构
 date: 2020-03-18 00:40:00
 tags:
 - JVM
@@ -78,4 +78,4 @@ Java 方法在执行时会在 JVM Stack 中入栈一个 Stack Frame (栈帧)，�
 
 ![][思维导图]
 
-[思维导图]: http://q8rnfvsfm.bkt.clouddn.com/images/JVM%20%E5%86%85%E5%AD%98%E7%BB%93%E6%9E%84/JVM%20%E5%86%85%E5%AD%98%E7%BB%93%E6%9E%84.png
+[思维导图]: http://static.wilfredshen.cn/images/JVM%20%E5%86%85%E5%AD%98%E7%BB%93%E6%9E%84/JVM%20%E5%86%85%E5%AD%98%E7%BB%93%E6%9E%84.png

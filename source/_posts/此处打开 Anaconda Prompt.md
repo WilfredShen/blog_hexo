@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: 此处打开Anaconda Prompt
+title: 此处打开 Anaconda Prompt
 date: 2019-08-27 22:55:00
 tags:
 - Anaconda
@@ -33,5 +33,5 @@ categories:
 ![][pic-1]
 ![][pic-2]
 
-[pic-1]: http://q8rnfvsfm.bkt.clouddn.com/images/%E6%AD%A4%E5%A4%84%E6%89%93%E5%BC%80%20Anaconda%20Prompt/pic-1.png
-[pic-2]: http://q8rnfvsfm.bkt.clouddn.com/images/%E6%AD%A4%E5%A4%84%E6%89%93%E5%BC%80%20Anaconda%20Prompt/pic-2.png
+[pic-1]: http://static.wilfredshen.cn/images/%E6%AD%A4%E5%A4%84%E6%89%93%E5%BC%80%20Anaconda%20Prompt/pic-1.png
+[pic-2]: http://static.wilfredshen.cn/images/%E6%AD%A4%E5%A4%84%E6%89%93%E5%BC%80%20Anaconda%20Prompt/pic-2.png

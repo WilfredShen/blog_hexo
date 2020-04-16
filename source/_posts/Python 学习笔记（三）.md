@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Python学习笔记（三）
+title: Python 学习笔记（三）
 date: 2019-09-10 23:20:00
 tags:
 - Python
@@ -148,7 +148,7 @@ print(p.getAddress())
 
 ## Links
 
-* [Anaconda安装教程](https://wilfredshen.cn/blog/2019-08-26/%E5%AE%89%E8%A3%85Anaconda/)
-  * [https://wilfredshen.cn/blog/2019-08-26/安装Anaconda/](https://wilfredshen.cn/blog/2019-08-26/%E5%AE%89%E8%A3%85Anaconda/)
-* [Python环境装配教程](https://wilfredshen.cn/blog/2019-08-26/Python%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/)（先安装[Anaconda](https://wilfredshen.cn/blog/2019-08-26/%E5%AE%89%E8%A3%85Anaconda/)）
-  * [https://wilfredshen.cn/blog/2019-08-26/Python环境配置/](https://wilfredshen.cn/blog/2019-08-26/Python%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/)
+* [Anaconda安装教程](https://wilfredshen.cn/2019/08/26/2019-08-26-%E5%AE%89%E8%A3%85%20Anaconda/)
+  * [安装 Anaconda](https://wilfredshen.cn/2019/08/26/2019-08-26-%E5%AE%89%E8%A3%85%20Anaconda/)
+* [Python环境装配教程](https://wilfredshen.cn/2019/08/26/2019-08-26-Python%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/)（先安装[Anaconda](https://wilfredshen.cn/2019/08/26/2019-08-26-%E5%AE%89%E8%A3%85%20Anaconda/)）
+  * [Python 环境配置](https://wilfredshen.cn/2019/08/26/2019-08-26-Python%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/)

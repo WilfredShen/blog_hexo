@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: 安装Anaconda
+title: 安装 Anaconda
 date: 2019-08-26 16:20:00
 tags:
 - Anaconda
@@ -92,16 +92,16 @@ categories:
 
 由于Anaconda Prompt经常会用到，基于方便考虑，我们可以将它添加到右键菜单中，同时还可以将cmd添加到右键菜单中。
 
-[博客链接：https://wilfredshen.cn/blog/2019-08-27/此处打开Anaconda-Prompt/](https://wilfredshen.cn/blog/2019-08-27/%E6%AD%A4%E5%A4%84%E6%89%93%E5%BC%80Anaconda-Prompt/)
+[博客链接：https://wilfredshen.cn/2019/08/27/此处打开 Anaconda Prompt/](https://wilfredshen.cn/2019/08/27/2019-08-27-%E6%AD%A4%E5%A4%84%E6%89%93%E5%BC%80%20Anaconda%20Prompt/)
 
 ### 装配Python 3.7
 
-[博客链接：https://wilfredshen.cn/blog/2019-08-26/Python环境配置/](https://wilfredshen.cn/blog/2019-08-26/Python%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/)
+[博客链接：https://wilfredshen.cn/blog/Python 环境配置/](https://wilfredshen.cn/2019/08/26/2019-08-26-Python%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/)
 
-[pic-1]: http://q8rnfvsfm.bkt.clouddn.com/images/%E5%AE%89%E8%A3%85%20Anaconda/pic-1.png
-[pic-2]: http://q8rnfvsfm.bkt.clouddn.com/images/%E5%AE%89%E8%A3%85%20Anaconda/pic-2.png
-[pic-3]: http://q8rnfvsfm.bkt.clouddn.com/images/%E5%AE%89%E8%A3%85%20Anaconda/pic-3.png
-[pic-4]: http://q8rnfvsfm.bkt.clouddn.com/images/%E5%AE%89%E8%A3%85%20Anaconda/pic-4.png
-[pic-5]: http://q8rnfvsfm.bkt.clouddn.com/images/%E5%AE%89%E8%A3%85%20Anaconda/pic-5.png
-[pic-6]: http://q8rnfvsfm.bkt.clouddn.com/images/%E5%AE%89%E8%A3%85%20Anaconda/pic-6.png
-[pic-7]: http://q8rnfvsfm.bkt.clouddn.com/images/%E5%AE%89%E8%A3%85%20Anaconda/pic-7.png
+[pic-1]: http://static.wilfredshen.cn/images/%E5%AE%89%E8%A3%85%20Anaconda/pic-1.png
+[pic-2]: http://static.wilfredshen.cn/images/%E5%AE%89%E8%A3%85%20Anaconda/pic-2.png
+[pic-3]: http://static.wilfredshen.cn/images/%E5%AE%89%E8%A3%85%20Anaconda/pic-3.png
+[pic-4]: http://static.wilfredshen.cn/images/%E5%AE%89%E8%A3%85%20Anaconda/pic-4.png
+[pic-5]: http://static.wilfredshen.cn/images/%E5%AE%89%E8%A3%85%20Anaconda/pic-5.png
+[pic-6]: http://static.wilfredshen.cn/images/%E5%AE%89%E8%A3%85%20Anaconda/pic-6.png
+[pic-7]: http://static.wilfredshen.cn/images/%E5%AE%89%E8%A3%85%20Anaconda/pic-7.png

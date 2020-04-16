@@ -1,0 +1,78 @@
+---
+layout: post
+title: 一条 URL 走过的路
+date: 2020-03-17 23:45:00
+tags:
+- URL
+- HTTP
+- TCP/IP
+categories:
+- tech
+- WEB
+---
+
+本文参考自网络上多篇博客，并个人归纳总结，故此处不一一列举。
+
+## DNS解析
+
+1. 搜索浏览器自身缓存的 DNS 记录
+2. 搜索 hosts 文件和操作系统缓存
+3. 向域名解析服务器发送解析请求
+4. 在域名解析服务器开始递归和迭代解析
+5. 获取域名对应的 IP 后，依次返回至给浏览器
+
+## TCP连接
+
+基础结构：
+
+1. 应用层：解析 URL 获得 IP 地址，根据 HTTP 协议生成 HTTP 请求报文或对请求报文进行处理
+2. 传输层：通过三次握手建立连接，根据 TCP 协议把请求报文按序号分割或重新组合
+3. 网络层：根据 IP 协议（传输数据），ARP 协议（获取MAC地址），OSPF 协议（选择最优路径），搜索服务器地址，一边中转一边传输数据
+4. 数据链路层：到达后通过数据链路层，物理层负责 0、1 比特流与物理设备电压高低，光的闪灭之间的互换。数据链路层负责将 0、1 序列划分为数据帧从一个节点传输到临近的另一个节点，这些节点是通过 MAC 来唯一标识的（MAC，物理地址，一个中主机会有一个 MAC 地址）
+
+连接过程中的数据传输：
+客户端→1→2→3→4→5→服务器→5→4→3→2→1→服务器处理请求→1→2→3→4→5→客户端→5→4→3→2→1→浏览器渲染→断开 TCP 连接
+
+## 发送HTTP请求
+
+请求报文：
+
+* 请求行
+  * 格式：Method Request-URL HTTP-Version CRLF
+  * 常用 Method：GET, POST, PUT, DELETE, OPTIONS, HEAD 等
+* 请求报头：Accept, Accept-Charset, Accept-Encoding, Accept-Language, Content-Type, Authorization, Cookie, User-Agent 等
+* 请求正文：数据格式一般为 JSON
+
+## 服务器处理请求并返回报文
+
+响应报文：
+
+* 状态码
+  * 3位数，第一位定义了响应的类别，共5种
+    * 1xx 【消息】服务器收到请求，需要请求者继续执行操作
+    * 2xx 【成功】请求已成功被服务器接收、理解、并接受。
+    * 3xx 【重定向】客户端需要采取进一步的操作以完成请求
+    * 4xx 【客户端请求错误】客户端错误，请求包含语法错误或无法完成请求
+    * 5xx 【服务器错误】服务器在处理请求的过程中发生了错误
+* 响应报头
+* 响应报文
+  * 服务器返回给浏览器的文本信息，通常 HTML、CSS、JS、图片等文件就放在这一部分
+
+## 解析报文并渲染
+
+* 根据页面内容，生成 DOM Tree
+* 根据 CSS 内容，生成 CSS Rule Tree（CSSOM Tree）
+  * 阻塞 JS 执行
+  * 阻塞 DOM 渲染
+  * 不影响 DOM 解析
+* 根据 DOM Tree 和 CSS Rule Tree 生成 Render Tree
+* 根据 Render Tree 渲染网页
+* 调用 JS 执行引擎执行JS代码
+  * 执行时阻塞 DOM 和 CSSOM 解析
+  * 异步方法可以让 DOM 和 CSSOM 先进行解析
+
+## 流程图
+
+![][01-访问URL]
+
+[01-访问URL]: http://static.wilfredshen.cn/images/%E8%AE%BF%E9%97%AE%20URL/01-%E8%AE%BF%E9%97%AE%20URL.png
