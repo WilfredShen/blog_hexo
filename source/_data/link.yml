@@ -3,13 +3,13 @@ class:
   link_list:
     1:
       name: BrantShi
-      link: http://brantshi.github.io/
-      avatar: /img/brantshi.jpg
-      descr: xxxxxxx
+      link: https://brantshi.github.io/
+      avatar: http://q8rnfvsfm.bkt.clouddn.com/images/avatar/brantshi.jpg
+      descr: 狠人不需要介绍🗿
     2:
       name: zhy
       link: https://zhychestercheung.github.io/
-      avatar: /img/zhy.jpg
+      avatar: http://q8rnfvsfm.bkt.clouddn.com/images/avatar/zhy.jpg
       descr: 欢迎大家给我留言😎
 
 #  class2:

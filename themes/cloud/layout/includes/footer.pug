@@ -7,11 +7,12 @@
     .copyright!= `&copy;${nowYear} By ${config.author}`
   if theme.footer_copyright.enable
     .framework-info
-      span= _p('footer.driven') + ' '
       a(href='https://hexo.io')
         span Hexo
-      span.footer-separator |
-      span= _p('footer.theme') + ' '
+      span.footer-separator -
+      span=' '
+      span="Cloud"
+      span=" extends "
       a(href='https://github.com/jerryc127/hexo-theme-butterfly')
         span Butterfly
   if theme.footer_custom_text

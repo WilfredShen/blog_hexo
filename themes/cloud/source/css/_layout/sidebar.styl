@@ -3,14 +3,27 @@
   top: 0
   left: -($sidebar-width)
   z-index: 10
-  padding: 1rem 0 2rem .5rem
+  padding: 1rem 0 2rem 0
   width: $sidebar-width
   height: 100%
   background: $sidebar-background
   box-shadow: -.25rem 0 .25rem rgba($sidebar-background, .6) inset
   opacity: .9
 
+  *::-webkit-scrollbar-track
+    background: rgb(#f6f8fa)
+  
+  *::-webkit-scrollbar-thumb
+    background: rgb(#eaeaea)
+
   .sidebar-toc
+    .sidebar-toc__title
+      padding: 0
+      border-bottom: .25rem rgb($theme-paginator-color) solid
+
+    .sidebar-toc__content
+      padding-left: 2rem
+
     ol,
     li
       list-style: none
@@ -27,7 +40,7 @@
     &__content
       overflow-y: scroll
       padding-bottom: 5rem
-      height: 90vh
+      height: 85vh
 
     .toc-link
       display: block
@@ -69,6 +82,9 @@
     width: $mobile-sidebar-width
     opacity: 1
     transition: all .4s
+    .sidebar-toc
+      .sidebar-toc__content
+        padding-left: .5rem
 
     .toc-child
       display: block !important

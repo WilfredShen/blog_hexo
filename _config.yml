@@ -13,7 +13,7 @@ timezone: '' # 网站时区。Hexo 默认使用您电脑的时区
 
 # URL 这一块一般可以设置的是 url 这个参数，比如我要设置绑定域名的，这里就需要填写我的域名信息
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://47.93.91.154
+url: http://wilfredshen.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -97,6 +97,39 @@ search:
   path: search.xml
   field: post
 
+# feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit:
+  content_limit_delim: ' '
+
+# hexo-neat
+# 博文压缩
+neat_enable: false
+# 压缩html
+neat_html:
+  enable: true
+  exclude:
+# 压缩css  
+neat_css:
+  enable: true
+  exclude:
+    - '**/*.min.css'
+# 压缩js
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '**/*.min.js'
+    - '**/main.js'
+    - '**/utils.js'
+
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
 # include:
@@ -112,5 +145,5 @@ theme: cloud
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@47.93.91.154:/home/git/hexo.git
+  repo: git@wilfredshen.cn:/home/git/hexo.git
   branch: master

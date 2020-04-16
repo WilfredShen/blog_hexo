@@ -5,10 +5,13 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
       color: alpha(#FFFFFF, .6)
 
     *::-webkit-scrollbar-thumb
-      background: rgb(#888888)
+      background: rgb(#666666)
 
     *::-webkit-scrollbar-track
-      background: rgb(#121212)
+      background: rgb(#0d0d0d)
+
+    .page-number.current
+      background: rgb(#FF7272) !important
 
     // 網站背景，footer背景
     #web_bg[data-type=color],
@@ -119,6 +122,8 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
 
     // 右下角按鈕
     #rightside
+      background-color: alpha(#121212, .6) !important
+      box-shadow: 0 0 3px #121212 !important
       & > div
         & > i,
         & > a,
@@ -126,8 +131,8 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
           // background-color: lighten(#121212, 5) !important
           color: alpha(#FFFFFF, .6) !important
 
-          &:hover
-            background: lighten(#121212, 20) !important
+          // &:hover
+          //   background: lighten(#121212, 20) !important
 
     // 打賞按鈕
     .post-reward
