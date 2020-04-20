@@ -96,8 +96,8 @@ copy_copyright:
 
 Snackbar:
   bookmark:
-    message_prev: Press
-    message_next: to bookmark this page
+    message_prev: Your browser may not support this feature. 
+    message_next: Please add this bookmark it manually.
   chs_to_cht: Traditional Chinese Activated Manually
   cht_to_chs: Simplified Chinese Activated Manually
   day_to_night: Dark Mode Activated Manually

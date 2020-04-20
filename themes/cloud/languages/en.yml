@@ -96,6 +96,7 @@ copy_copyright:
 
 Snackbar:
   bookmark:
+    message_warn: Your browser may not support this feature.
     message_prev: Press
     message_next: to bookmark this page
   chs_to_cht: Traditional Chinese Activated Manually

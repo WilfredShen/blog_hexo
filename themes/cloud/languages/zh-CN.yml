@@ -98,8 +98,8 @@ copy_copyright:
 
 Snackbar:
   bookmark:
-    message_prev: 按
-    message_next: 键将本页加入书签
+    message_prev: 你的浏览器可能不支持该功能，
+    message_next: 请手动添加
   chs_to_cht: 你已切换为繁体
   cht_to_chs: 你已切换为简体
   day_to_night: 你已切换为深色模式

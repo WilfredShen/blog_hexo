@@ -13,7 +13,7 @@ $(function () {
   var menusWidth = $('.menus').width()
   var sidebarWidth = $('#sidebar').width()
 
-  function isAdjust (n) {
+  function isAdjust(n) {
     var t
     if (n === 1) {
       t = blogNameWidth + menusWidth > $pageHead.width() - sidebarWidth - 20
@@ -25,20 +25,20 @@ $(function () {
     else headerAdjustBack()
   }
 
-  function headerAdjust () {
+  function headerAdjust() {
     $pageHead.find('.toggle-menu').addClass('is-visible-inline')
     $pageHead.find('.menus_items').addClass('is_invisible')
     $pageHead.find('#search_button span').addClass('is_invisible')
   }
 
-  function headerAdjustBack () {
+  function headerAdjustBack() {
     $pageHead.find('.toggle-menu').removeClass('is-visible-inline')
     $pageHead.find('.menus_items').removeClass('is_invisible')
     $pageHead.find('#search_button span').removeClass('is_invisible')
   }
 
   // 初始化header
-  function initAjust () {
+  function initAjust() {
     if (window.innerWidth < 768) headerAdjust()
     else isAdjust(2)
   }
@@ -79,7 +79,7 @@ $(function () {
    * 點擊左下角箭頭,顯示sidebar
    */
 
-  function closeSidebar () {
+  function closeSidebar() {
     $('#sidebar').removeClass('tocOpenPc')
     $('.menus').animate({
       paddingRight: 0
@@ -100,7 +100,7 @@ $(function () {
     }, 400)
   }
 
-  function openSidebar () {
+  function openSidebar() {
     $('#sidebar').addClass('tocOpenPc')
     $('.menus').animate({
       paddingRight: 300
@@ -145,7 +145,7 @@ $(function () {
   var $mobileTocButton = $('#mobile-toc-button')
   var $menuMask = $('#menu_mask')
 
-  function openMobileSidebar (name) {
+  function openMobileSidebar(name) {
     sidebarPaddingR()
     $('body').css('overflow', 'hidden')
     $menuMask.fadeIn()
@@ -167,7 +167,7 @@ $(function () {
     }
   }
 
-  function closeMobileSidebar (name) {
+  function closeMobileSidebar(name) {
     $('body').css({ overflow: '', 'padding-right': '' })
     $menuMask.fadeOut()
 
@@ -237,10 +237,12 @@ $(function () {
       return true
     } else { // webkit - safari/chrome
       if (isSnackbar) {
-        var bookmarkText = GLOBAL_CONFIG.Snackbar.bookmark.message_prev + ' ' + (navigator.userAgent.toLowerCase().indexOf('mac') !== -1 ? 'Command/Cmd' : 'CTRL') + '+ D ' + GLOBAL_CONFIG.Snackbar.bookmark.message_next + '.'
+        // var bookmarkText = GLOBAL_CONFIG.Snackbar.bookmark.message_prev + ' ' + (navigator.userAgent.toLowerCase().indexOf('mac') !== -1 ? 'Command/Cmd' : 'CTRL') + '+ D ' + GLOBAL_CONFIG.Snackbar.bookmark.message_next + '.'
+        var bookmarkText = GLOBAL_CONFIG.Snackbar.bookmark.message_prev + GLOBAL_CONFIG.Snackbar.bookmark.message_next
         snackbarShow(bookmarkText)
       } else {
-        alert(GLOBAL_CONFIG.bookmark.message_prev + ' ' + (navigator.userAgent.toLowerCase().indexOf('mac') !== -1 ? 'Command/Cmd' : 'CTRL') + '+ D ' + GLOBAL_CONFIG.bookmark.message_next + '.')
+        // alert(GLOBAL_CONFIG.bookmark.message_prev + ' ' + (navigator.userAgent.toLowerCase().indexOf('mac') !== -1 ? 'Command/Cmd' : 'CTRL') + '+ D ' + GLOBAL_CONFIG.bookmark.message_next + '.')
+        alert(GLOBAL_CONFIG.bookmark.message_prev + GLOBAL_CONFIG.bookmark.message_next)
       }
     }
   })
@@ -441,7 +443,7 @@ $(function () {
   })
 
   // find the scroll direction
-  function scrollDirection (currentTop) {
+  function scrollDirection(currentTop) {
     var result = currentTop > initTop // true is down & false is up
     initTop = currentTop
     return result
@@ -513,8 +515,8 @@ $(function () {
     // ol.toc > (li.toc-item, ...)
     // li.toc-item > (a.toc-link, ol.toc-child > (li.toc-item, ...))
     var findHeadPosition = function (top) {
-    // assume that we are not in the post page if no TOC link be found,
-    // thus no need to update the status
+      // assume that we are not in the post page if no TOC link be found,
+      // thus no need to update the status
       if ($('.toc-link').length === 0) {
         return false
       }
@@ -656,15 +658,15 @@ $(function () {
     document.documentElement.getAttribute('data-theme') === 'dark' ? changeLightIcon() : changeDarkIcon()
   }
 
-  function changeLightIcon () {
+  function changeLightIcon() {
     isFontAwesomeV5 ? $darkModeButtom.removeClass('fa-moon').addClass('fa-sun') : $darkModeButtom.removeClass('fa-moon-o').addClass('fa-sun-o')
   }
 
-  function changeDarkIcon () {
+  function changeDarkIcon() {
     isFontAwesomeV5 ? $darkModeButtom.removeClass('fa-sun').addClass('fa-moon') : $darkModeButtom.removeClass('fa-sun-o').addClass('fa-moon-o')
   }
 
-  function switchReadMode () {
+  function switchReadMode() {
     var nowMode = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'
     if (nowMode === 'light') {
       changeLightIcon()
@@ -737,7 +739,7 @@ $(function () {
     })
   })
 
-  function addPhotoFigcaption () {
+  function addPhotoFigcaption() {
     var images = $('#article-container img')
     images.each(function (i, o) {
       var $this = $(o)

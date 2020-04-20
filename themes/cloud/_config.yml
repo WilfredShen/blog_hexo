@@ -572,7 +572,7 @@ darkmode:
   # autoChangeMode: 1  跟隨系統而變化，不支持的瀏覽器/系統將按照時間晚上6點到早上6點之間切換為 dark mode
   # autoChangeMode: 2  只按照時間晚上6點到早上6點之間切換為 dark mode
   # autoChangeMode: false 取消自動切換
-  autoChangeMode: 2
+  autoChangeMode: 1
 
 ####    other     ####
 #------------------------------------------------
@@ -594,9 +594,9 @@ fancybox:
 # position 彈窗位置
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: false
+  enable: true
   position: bottom-left
-  bg_light: "#49b1f5" #light mode時彈窗背景
+  bg_light: "#18b0b0" #light mode時彈窗背景
   bg_dark: "#2d3035" #dark mode時彈窗背景
 
 #百度推送
