@@ -1,18 +1,22 @@
-each value, label in theme.menu
-  if !Array.isArray(value)
+each value, key in theme.menu
+  if typeof(value) !== 'object'
+    - var isplit = value.split('||')
     .menus_item
-      a.site-page(href=url_for(trim(value.split('||')[0])))
-        i.fa-fw(class=trim(value.split('||')[1]))
-        span=' '+label
+      a.site-page(href=url_for(trim(isplit[0])))
+        i.fa-fw(class=trim(isplit[1]))
+        span=' '+key
   else
     .menus_item
-      a.site-page
-        i.fa-fw(class=trim(label.split('||')[1]) aria-hidden="true")
-        span=' '+ trim(label.split('||')[0])
+      - var selfsplit=value.self.split('||')
+      a.site-page(href=url_for(trim(selfsplit[0])))
+        i.fa-fw(class=trim(selfsplit[1]) aria-hidden="true")
+        span=' '+ trim(key)
         i.fa.fa-chevron-down.menus-expand(aria-hidden="true")
       ul.menus_item_child
-        each i in value
-          li
-            a.site-page(href=url_for(trim(i.split('||')[1])))
-              i.fa-fw(class=trim(i.split('||')[2]))
-              span=' '+trim(i.split('||')[0])
+        each ivalue, ikey in value
+          - var isplit = ivalue.split('||')
+          if ikey !== 'self'
+            li
+              a.site-page(href=url_for(trim(isplit[0])))
+                i.fa-fw(class=trim(isplit[1]))
+                span=' '+ikey

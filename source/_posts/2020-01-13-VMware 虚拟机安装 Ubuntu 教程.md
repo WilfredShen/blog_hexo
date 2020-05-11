@@ -1,14 +1,15 @@
 ---
 layout: post
 title: VMware 虚拟机安装 Ubuntu 教程
-date: 2020-01-13 01:20:00
 tags:
-- 虚拟机
-- Ubuntu
-- VMware
+  - Virtual-Machine
+  - Ubuntu
+  - VMware
 categories:
-- tech
-- Virtual-Machine
+  - tech
+  - Virtual-Machine
+abbrlink: a04c2f4
+date: 2020-01-13 01:20:00
 ---
 
 ## 安装环境

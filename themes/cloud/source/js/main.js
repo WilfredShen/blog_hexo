@@ -59,7 +59,7 @@ $(function () {
    */
   if (GLOBAL_CONFIG_SITE.isHome) {
     var isSafari = /Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent)
-    if (!isSafari && isDesktop()) {
+    if (!isSafari && isDesktop() && window.location.href.search(/\/page\/[0-9]+/) == -1) {
       $('#nav').css('background-attachment', 'fixed')
     }
   }
@@ -236,13 +236,13 @@ $(function () {
       this.title = document.title
       return true
     } else { // webkit - safari/chrome
+      var bookmarkText = GLOBAL_CONFIG.Snackbar.bookmark.message_prev + GLOBAL_CONFIG.Snackbar.bookmark.message_next
       if (isSnackbar) {
         // var bookmarkText = GLOBAL_CONFIG.Snackbar.bookmark.message_prev + ' ' + (navigator.userAgent.toLowerCase().indexOf('mac') !== -1 ? 'Command/Cmd' : 'CTRL') + '+ D ' + GLOBAL_CONFIG.Snackbar.bookmark.message_next + '.'
-        var bookmarkText = GLOBAL_CONFIG.Snackbar.bookmark.message_prev + GLOBAL_CONFIG.Snackbar.bookmark.message_next
         snackbarShow(bookmarkText)
       } else {
         // alert(GLOBAL_CONFIG.bookmark.message_prev + ' ' + (navigator.userAgent.toLowerCase().indexOf('mac') !== -1 ? 'Command/Cmd' : 'CTRL') + '+ D ' + GLOBAL_CONFIG.bookmark.message_next + '.')
-        alert(GLOBAL_CONFIG.bookmark.message_prev + GLOBAL_CONFIG.bookmark.message_next)
+        alert(bookmarkText)
       }
     }
   })
@@ -750,4 +750,9 @@ $(function () {
     })
   }
   if (GLOBAL_CONFIG.isPhotoFigcaption) addPhotoFigcaption()
+
+  var pageUrl = window.location.href
+  if (pageUrl.search(/.+\/page\/[0-9]*\//i) != -1 && $(document).scrollTop() == 0) {
+    setTimeout("$('#scroll_down').click()", 1000)
+  }
 })

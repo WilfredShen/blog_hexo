@@ -1,4 +1,4 @@
-function debounce (func, wait, immediate) {
+function debounce(func, wait, immediate) {
   var timeout
   return function () {
     var context = this
@@ -14,7 +14,7 @@ function debounce (func, wait, immediate) {
   }
 };
 
-function throttle (func, wait, options) {
+function throttle(func, wait, options) {
   var timeout, context, args
   var previous = 0
   if (!options) options = {}
@@ -58,32 +58,32 @@ function sidebarPaddingR() {
 }
 
 // iPadOS
-function isIpad () {
-  return navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1 
+function isIpad() {
+  return navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1
 }
 
-function isTMobile () {
+function isTMobile() {
   var ua = navigator.userAgent
   var pa = /iPad|iPhone|iPod|Android|Opera Mini|BlackBerry|webOS|UCWEB|Blazer|PSP|IEMobile|Symbian/g
   return window.screen.width < 992 && pa.test(ua)
 }
 
-function isMobile () {
+function isMobile() {
   return this.isIpad() || this.isTMobile()
 }
 
-function isDesktop () {
+function isDesktop() {
   return !this.isMobile()
 }
 
-function scrollTo (name) {
+function scrollTo(name) {
   var scrollOffset = $(name).offset()
   $('body,html').animate({
     scrollTop: scrollOffset.top
   })
 };
 
-function loadScript (url, callback) {
+function loadScript(url, callback) {
   var script = document.createElement('script')
   script.type = 'text/javascript'
   if (script.readyState) { // IE
@@ -103,9 +103,9 @@ function loadScript (url, callback) {
   document.body.appendChild(script)
 };
 
-function snackbarShow (text, showAction, duration) {
+function snackbarShow(text, showAction, duration) {
   var a = (typeof showAction !== 'undefined') ? showAction : false
-  var d = (typeof duration !== 'undefined') ? duration : 2000
+  var d = (typeof duration !== 'undefined') ? duration : 3000
   var position = GLOBAL_CONFIG.Snackbar.position
   var bg = document.documentElement.getAttribute('data-theme') === 'light' ? GLOBAL_CONFIG.Snackbar.bgLight : GLOBAL_CONFIG.Snackbar.bgDark
   Snackbar.show({
@@ -115,6 +115,13 @@ function snackbarShow (text, showAction, duration) {
     duration: d,
     pos: position
   })
+}
+
+function isSnackbarShow(text, showAction, duration) {
+  if (isSnackbar)
+    snackbarShow(text, showAction, duration)
+  else
+    alert(text)
 }
 
 window.debounce = debounce

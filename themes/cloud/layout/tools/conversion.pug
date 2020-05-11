@@ -1,0 +1,150 @@
+#page
+  #page-content(v-cloak)
+    #tools-input-area
+      #input-title-bar
+        span='{{ attributes.inputTextarea.title }}'
+      textarea#input-textarea(
+        v-model='attributes.inputTextarea.value'
+        :rows='attributes.inputTextarea.maxRows'
+        :placeholder='attributes.inputTextarea.placeholder')
+    #tools-control-area
+      a.tools-button(v-for='item in buttons' @click='handleeClick(item.value)')
+        i.fa(:class='item.class' v-if='item.class')
+        span=' {{ item.text }}'
+    #tools-output-area
+      #output-title-bar
+        span='{{ attributes.outputTextarea.title }}'
+      textarea#output-textarea(
+        v-model='attributes.outputTextarea.value'
+        :rows='attributes.outputTextarea.maxRows'
+        :placeholder='attributes.outputTextarea.placeholder')
+
+#settings-wrap
+  #settings(v-cloak)
+    //- #settings-announcement.settings-block
+      .settings-label
+        span=''
+
+    //- start coding
+    //-   start coding-input
+    #input-coding.settings-block(@mouseleave='status.inputCodingSelectEnabled=false')
+      .settings-label
+        span='input 编码：'
+      .settings-select-wrap
+        a#settings-input-coding-selected.settings-selected(@click='status.inputCodingSelectEnabled=!status.inputCodingSelectEnabled')
+          span='{{ attributes.inputCodingSelected.text }}'
+          i.fa.fa-chevron-down(:class='status.inputCodingSelectEnabled ? "rotate180" : ""')
+        #settings-input-coding-select-options.settings-select-options(v-if='status.inputCodingSelectEnabled')
+          ul
+            li(v-for='(item, key) in consts.codings')
+              a(@click='codingSelected("input",key)')
+                span='{{ item.text }}'
+    //-   end coding-input
+
+    //-   start coding-output
+    #output-coding.settings-block(@mouseleave='status.outputCodingSelectEnabled=false')
+      .settings-label
+        span='output 编码：'
+      .settings-select-wrap
+        a#settings-output-coding-selected.settings-selected(@click='status.outputCodingSelectEnabled=!status.outputCodingSelectEnabled')
+          span='{{ attributes.outputCodingSelected.text }}'
+          i.fa.fa-chevron-down(:class='status.outputCodingSelectEnabled ? "rotate180" : ""')
+        #settings-input-coding-select-options.settings-select-options(v-if='status.outputCodingSelectEnabled')
+          ul
+            li(v-for='(item, key) in consts.codings')
+              a(@click='codingSelected("output",key)')
+                span='{{ item.text }}'
+    //-   end coding-output
+    //- end coding
+
+    //- start ignore
+    //-   start ignore-select
+    #input-separator.settings-block(@mouseleave='status.ignoreSelectEnabled=false')
+      .settings-label
+        span='ignore 字符：'
+      .settings-select-wrap
+        a#settings-input-separator-selected.settings-selected(@click='status.ignoreSelectEnabled=!status.ignoreSelectEnabled')
+          span='{{ attributes.ignoreSelected.key }}'
+          i.fa.fa-chevron-down(:class='status.ignoreSelectEnabled ? "rotate180" : ""')
+        #settings-input-separator-select-options.settings-select-options(v-if='status.ignoreSelectEnabled')
+          ul
+            li(v-for='item in consts.ignoreOptions')
+              a(@click='ignoreSelected(item)')
+                span='{{ item }}'
+    //-   end ignore-select
+
+    //-   start ignore-textarea
+    #input-separator-custom.settings-block
+      textarea#input-separator-custom-input(
+        rows=1
+        v-model='attributes.ignoreSelected.value'
+        :placeholder='ignorePlaceholder'
+        :disabled='attributes.ignoreSelected.key !== "custom"')
+      textarea#input-separator-custom-input-attributes(
+        rows=1
+        v-model='attributes.ignoreSelected.attr'
+        :placeholder='attributes.ignoreSelected.attrPlaceholder'
+        style='width: 30%; padding-left: .3rem'
+        v-if='attributes.ignoreSelected.key === "custom"')
+    //-   end ignore-textarea
+    //- end ignore
+
+    //- start separator
+    //-   start separator-input
+    //-     start separator-input-select
+    #input-separator.settings-block(@mouseleave='status.inputSeparatorSelectEnabled=false')
+      .settings-label
+        span='input 分隔符：'
+      .settings-select-wrap
+        a#settings-input-separator-selected.settings-selected(@click='status.inputSeparatorSelectEnabled=!status.inputSeparatorSelectEnabled')
+          span='{{ attributes.inputSeparatorSelected.key }}'
+          i.fa.fa-chevron-down(:class='status.inputSeparatorSelectEnabled ? "rotate180" : ""')
+        #settings-input-separator-select-options.settings-select-options(v-if='status.inputSeparatorSelectEnabled')
+          ul
+            li(v-for='item in consts.separatorOptions')
+              a(@click='separatorSelected("input",item)')
+                span='{{ item }}'
+    //-     end separator-input-select
+
+    //-     start separator-input-textarea
+    #input-separator-custom.settings-block
+      textarea#input-separator-custom-input(
+        rows=1
+        v-model='attributes.inputSeparatorSelected.value'
+        :placeholder='inputSeparatorPlaceholder'
+        :disabled='attributes.inputSeparatorSelected.key !== "custom"')
+      textarea#input-separator-custom-input-attributes(
+        rows=1
+        v-model='attributes.inputSeparatorSelected.attr'
+        :placeholder='attributes.inputSeparatorSelected.attrPlaceholder'
+        style='width: 30%; padding-left: .3rem'
+        v-if='attributes.inputSeparatorSelected.key === "custom"')
+    //-     end separator-input-textarea
+    //-   end separator-input
+
+    //-   start separator-output
+    //-     start separator-output-select
+    #output-separator.settings-block(@mouseleave='status.outputSeparatorSelectEnabled=false')
+      .settings-label
+        span='output 分隔符：'
+      .settings-select-wrap
+        a#settings-output-separator-selected.settings-selected(@click='status.outputSeparatorSelectEnabled=!status.outputSeparatorSelectEnabled')
+          span='{{ attributes.outputSeparatorSelected.key }}'
+          i.fa.fa-chevron-down(:class='status.outputSeparatorSelectEnabled ? "rotate180" : ""')
+        #settings-output-separator-select-options.settings-select-options(v-if='status.outputSeparatorSelectEnabled')
+          ul
+            li(v-for='item in consts.separatorOptions')
+              a(@click='separatorSelected("output",item)')
+                span='{{ item }}'
+    //-     end separator-output-select
+
+    //-     start separator-output-textarea
+    #output-separator-custom.settings-block
+      textarea#output-separator-custom-input(
+        rows=1
+        v-model='attributes.outputSeparatorSelected.value'
+        :placeholder='outputSeparatorPlaceholder'
+        :disabled='attributes.outputSeparatorSelected.key !== "custom"')
+    //-     end separator-output-textarea
+    //-   end separator-output
+    //- end separator

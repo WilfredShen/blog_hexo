@@ -24,7 +24,8 @@ html(lang=config.language data-theme=theme.display_mode)
             div!= body
           else
             block content
-            include widget/index.pug
+            if page.nowidget !== true
+              include widget/index.pug
       else
         main#content-inner.layout_post
           if body
@@ -41,7 +42,16 @@ html(lang=config.language data-theme=theme.display_mode)
 
     !=partial('includes/search/index', {}, {cache:theme.fragment_cache})
 
-    each item in theme.CDN_USE.js
-      script(src=url_for(item))
+    if theme.CDN_USE.js != null
+      each item in theme.CDN_USE.js
+        script(src=url_for(item))
+
+    if theme.site_source.js.base != null
+      each item in theme.site_source.js.base
+        script(src=url_for(item))
+
+    if page.toolType == 'conversion'
+      script(src=url_for(theme.site_source.js.vue))
+      script(src=url_for(theme.site_source.js.tools.conversion))
 
     include ./additional-js.pug

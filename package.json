@@ -7,10 +7,13 @@
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
-    "gbuild": "hexo generate && gulp",
-    "rgbuild": "hexo clean && hexo generate && gulp",
-    "publish": "hexo generate && gulp && hexo deploy",
-    "cggd": "hexo clean && hexo generate && gulp && hexo deploy"
+    "gg": "hexo generate && gulp",
+    "cg": "hexo clean && hexo generate",
+    "gd": "gulp && hexo deploy",
+    "cgs": "hexo clean && hexo generate && hexo s",
+    "cgg": "hexo clean && hexo generate && gulp",
+    "cggd": "hexo clean && hexo generate && gulp && hexo deploy",
+    "publish": "hexo clean && hexo generate && gulp && hexo deploy"
   },
   "hexo": {
     "version": "4.2.0"
@@ -45,5 +48,13 @@
     "hexo-renderer-pug": "^1.0.0",
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0"
+  },
+  "dependencies": {
+    "hexo-abbrlink": "^2.0.5",
+    "hexo-autonofollow": "^1.0.1",
+    "hexo-generator-baidu-sitemap": "^0.1.6",
+    "hexo-generator-sitemap": "^2.0.0",
+    "hexo-renderer-kramed": "^0.1.4",
+    "hexo-renderer-mathjax": "^0.6.0"
   }
 }

@@ -1,0 +1,8 @@
+#page
+  ul
+    each value, key in theme.menu.工具
+      if key !== 'self'
+        - var isplit = value.split('||')
+        li
+          a(href=url_for(trim(isplit[0])))
+            span=key

@@ -6,19 +6,23 @@
 #   xxx || 連結 || icon
 menu:
   Home: / || fa fa-home
-  归档: /archives/ || fa fa-archive
+  归档: /archive/ || fa fa-archive
   标签: /tags/ || fa fa-tags
   分类: /categories/ || fa fa-folder-open
-  友情链接: /link/ || fa fa-link
+  友情链接: /links/ || fa fa-link
   关于: /about/ || fa fa-heart
-  历史: /history/ || fa fa-history
+  历史: /history/ || fa fa-file-text-o
+  工具:
+    self: /tools/ || fa fa-wrench # 指定“工具”的图标和地址
+    编码转换 : /tools/conversion/ || fa fa-file-code-o
+    LaTeX公式编辑器: https://www.latexlive.com || fa fa-file-code-o
 
 # Favicon
 # ---------------
 favicon: /img/favicon.ico
 
 # default post img
-post-img : http://q8rnfvsfm.bkt.clouddn.com/images/default/post.jpg
+post-img : http://static.wilfredshen.cn/images/default/post.jpg
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
@@ -54,7 +58,7 @@ copy:
 # ---------------
 social:
   fa fa-github: https://github.com/WilfredShen || Github
-  fa fa-envelope: mailto:wilfredshen@foxmail.com || Email
+  fa fa-envelope: mailto:blog@wilfredshen.cn || Email
   fa fa-rss: /atom.xml || RSS
 
 ####    search    ####
@@ -84,7 +88,7 @@ local_search:
 # Please see doc for more details: https://docs.jerryc.me/config.html#mathjax
 # ---------------
 mathjax:
-  enable: false
+  enable: true
   # true 表示每一頁都加載mathjax.js
   # false 需要時加載，須在使用的Markdown Front-matter 加上 mathjax: true
   per_page: false
@@ -109,14 +113,14 @@ mermaid:
 # Post info settings
 # ---------------
 avatar:
-  img: http://q8rnfvsfm.bkt.clouddn.com/images/avatar/wilfred.gif
+  img: http://static.wilfredshen.cn/images/avatar/wilfred.gif
   effect: false # 頭像會一直轉圈
 
 # the banner image of index
-index_img:
+index_img: http://static.wilfredshen.cn/images/default/index.jpg
 
 # if the banner of page not setting,it will show the top_img
-default_top_img: http://q8rnfvsfm.bkt.clouddn.com/images/default/index.jpg
+default_top_img: http://static.wilfredshen.cn/images/default/default-top-img.jpg
 
 # the banner image of archive page
 archive_img:
@@ -146,12 +150,12 @@ cover:
   position: both
   # 當沒有設置cover時，默認的封面顯示
   default_cover:
-    - http://q8rnfvsfm.bkt.clouddn.com/images/default/post.jpg
+    - http://static.wilfredshen.cn/images/default/post.jpg
 
 # if the photo link cannot connect,it will show that
 lodding_bg:
-  flink: http://q8rnfvsfm.bkt.clouddn.com/images/default/friend_404.gif #404後圖片
-  post_page: http://q8rnfvsfm.bkt.clouddn.com/images/default/404.jpg #404後圖片
+  flink: http://static.wilfredshen.cn/images/default/friend_404.gif #404後圖片
+  post_page: http://static.wilfredshen.cn/images/default/404.jpg #404後圖片
 #  post: /img/loading.gif ##加載動畫
 
 # A simple 404 page
@@ -266,7 +270,7 @@ valine:
   guest_info: nick,mail,link #valine comment header info
   recordIP: false # Record reviewer IP
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
-  bg: http://q8rnfvsfm.bkt.clouddn.com/images/default/comment_bg.png # valine background
+  bg: http://static.wilfredshen.cn/images/default/comment_bg.png # valine background
   count: true # top_img顯示評論數
 
 # utterances
@@ -293,7 +297,7 @@ ICP:
   enable: true
   url: http://www.beian.miit.gov.cn/
   text: 浙ICP备20012387号
-  icon: http://q8rnfvsfm.bkt.clouddn.com/images/default/icp.png
+  icon: http://static.wilfredshen.cn/images/default/icp.png
 
 ####   Analysis    ####
 # ---------------
@@ -651,17 +655,27 @@ Open_Graph_meta: true
 # 開啟hexo自帶的緩存，加快生成速度
 fragment_cache: true
 
+# 网站资源控制
+site_source:
+  css:
+    base:
+      - /css/index.css
+
+  js:
+    base:
+      - /js/utils.js
+      - /js/main.js
+      - /js/custom.js
+    tools:
+      conversion: /js/tools/conversion.js
+    vue: https://cdn.jsdelivr.net/npm/vue@2.6.11
+
 # CDN
-# 網站必須
-# 可根據需要自行添加js/css
 CDN_USE:
   css:
-    - /css/index.css
 
   js:
     - https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js #/js/third-party/jquery.min.js
-    - /js/utils.js
-    - /js/main.js
 
 # CDN
 # 非必要不要修改

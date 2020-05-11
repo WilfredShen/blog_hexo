@@ -1,13 +1,14 @@
 ---
 layout: post
 title: VMware Workstation Pro15 安装教程
-date: 2020-01-13 00:40:00
 tags:
-- 虚拟机
-- VMware
+  - Virtual-Machine
+  - VMware
 categories:
-- tech
-- Virtual-Machine
+  - tech
+  - Virtual-Machine
+abbrlink: bbcd66d8
+date: 2020-01-13 00:40:00
 ---
 
 ## 安装环境

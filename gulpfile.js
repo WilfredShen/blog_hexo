@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var htmlmin = require('gulp-htmlmin');
 var less = require('gulp-less');
 // var babel = require('gulp-babel');
 // var concat = require('gulp-concat');
@@ -8,6 +9,20 @@ var cleanCSS = require('gulp-clean-css');
 var del = require('del');
 
 var paths = {
+  htmls: {
+    src: './public/**/*.html',
+    dest: './public',
+    options: {
+      removeComments: true,	//清除 HTML 注释
+      collapseWhitespace: true,	//压缩 HTML
+      collapseBooleanAttributes: false,	//省略布尔属性的值 <input checked="true"/> ==> <input />
+      removeEmptyAttributes: false,	//删除所有空格作属性值 <input id="" /> ==> <input />
+      removeScriptTypeAttributes: true,	//删除 <script> 的 type="text/javascript"
+      removeStyleLinkTypeAttributes: true,	//删除 <style> 和 <link> 的 type="text/css"
+      minifyJS: true,	//压缩页面 JS
+      minifyCSS: true	//压缩页面 CSS
+    }
+  },
   styles: {
     src: './public/**/*.less',
     dest: './public'
@@ -25,7 +40,13 @@ var paths = {
 function clean() {
   // You can use multiple globbing patterns as you would with `gulp.src`,
   // for example if you are using del 2.0 or above, return its promise
-  return del([ 'assets' ]);
+  return del(['assets']);
+}
+
+function htmls() {
+  return gulp.src(paths.htmls.src)
+    .pipe(htmlmin(paths.htmls.options))
+    .pipe(gulp.dest(paths.htmls.dest));
 }
 
 /*
@@ -59,7 +80,7 @@ function watch() {
 /*
  * Specify if tasks run in series or parallel using `gulp.series` and `gulp.parallel`
  */
-var build = gulp.series(clean, gulp.parallel(styles, scripts));
+var build = gulp.series(clean, gulp.parallel(htmls, styles, scripts));
 
 /*
  * You can use CommonJS `exports` module notation to declare tasks

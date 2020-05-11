@@ -15,7 +15,8 @@ timezone: '' # 网站时区。Hexo 默认使用您电脑的时区
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://wilfredshen.cn
 root: /
-permalink: :year/:month/:day/:title/
+# permalink: :year/:month/:day/:title/
+permalink: articles/:abbrlink/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -25,14 +26,15 @@ pretty_urls:
 source_dir: source # 源文件夹，这个文件夹用来存放内容。
 public_dir: public # 公共文件夹，这个文件夹用于存放生成的站点文件
 tag_dir: tags # 标签文件夹
-archive_dir: archives # 归档文件夹
+archive_dir: archive # 归档文件夹
 category_dir: categories # 分类文件夹
 code_dir: downloads/code # include code 文件夹
 i18n_dir: :lang # 国际化（i18n）文件夹
 skip_render: # 跳过指定文件的渲染，您可使用 glob 表达式来匹配路径
 
 # Writing
-new_post_name: :title.md # 新建文章默认文件名
+# new_post_name: :title.md # 新建文章默认文件名
+new_post_name: :year-:month-:day-:title.md # 新建文章默认文件名
 default_layout: post # 默认布局
 titlecase: false
 external_link: # 在新标签中打开一个外部链接，默认为true
@@ -127,14 +129,36 @@ neat_js:
   compress:
   exclude:
     - '**/*.min.js'
-    - '**/main.js'
-    - '**/utils.js'
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
 # include:
 # exclude:
 # ignore:
+
+# 站点地图
+baidusitemap:
+  path: baidusitemap.xml
+sitemap:
+  path: sitemap.xml
+
+# Adds nofollow attribute to all external links in your hexo blog posts automatically.
+## https://github.com/liuzc/hexo-autonofollow
+nofollow:
+    enable: true
+    exclude: # 例外的链接，可将友链放在此处
+    - wilfredshen.cn
+
+# Prohibit English quotation marks from becoming Chinese quotation marks
+## https://github.com/hexojs/hexo/issues/1981
+marked:
+  smartypants: false
+
+# abbrlink config
+## https://github.com/rozbo/hexo-abbrlink
+abbrlink:
+  alg: crc32  # support crc16(default) and crc32
+  rep: hex    # support dec(default) and hex
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
@@ -147,3 +171,7 @@ deploy:
   type: git
   repo: git@wilfredshen.cn:/home/git/hexo.git
   branch: master
+  ignore: 
+    - ./public/temp
+    - ./public/tmp
+    - ./public/**/*.bak

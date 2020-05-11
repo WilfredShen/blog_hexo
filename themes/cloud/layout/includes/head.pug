@@ -28,6 +28,7 @@ if pageKeywords
 meta(name="author" content=pageAuthor)
 meta(name="copyright" content=pageCopyright)
 meta(name ="format-detection" content="telephone=no")
+meta(name="msvalidate.01" content="74A05A8D3FF3CFD7A1CB314F9B06F933")
 !=favicon_tag(theme.favicon || config.favicon)
 
 if theme.disable_baidu_transformation
@@ -59,8 +60,13 @@ script(src=url_for(theme.CDN.js_cookies))
 if theme.darkmode.enable
   !=partial('includes/head/darkmode', {}, {cache:theme.fragment_cache})
 
-each item in theme.CDN_USE.css
-  link(rel='stylesheet', href=url_for(item))
+if theme.CDN_USE.css != null
+  each item in theme.CDN_USE.css
+    link(rel='stylesheet', href=url_for(item))
+
+if theme.site_source.css.base != null
+  each item in theme.site_source.css.base
+    link(rel='stylesheet', href=url_for(item))
 
 if theme.fontawesome_v5 && theme.fontawesome_v5.enable
   link(rel='stylesheet', href=url_for(theme.CDN.fontawesome_v5))

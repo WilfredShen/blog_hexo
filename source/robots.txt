@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+Allow: /about/
+Allow: /archives/
+Allow: /blog/
+Allow: /categories/
+Allow: /history/
+Allow: /link/
+Allow: /page/
+Allow: /tags/
+Disallow: /js/
+Disallow: /css/
+Disallow: /img/
+
+Sitemap: http://wilfredshen.cn/sitemap.xml
+Sitemap: http://wilfredshen.cn/baidusitemap.xml

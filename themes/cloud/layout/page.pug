@@ -14,6 +14,11 @@ block content
         div!= list_categories()
       if page.comments !== false
         include includes/comments/index.pug
+  else if page.type === 'tool'
+    if page.toolType === 'index'
+      include tools/index.pug
+    else if page.toolType === 'conversion'
+      include tools/conversion.pug
   else
     #page
       #article-container!= page.content
