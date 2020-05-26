@@ -197,8 +197,8 @@ post_copyright:
 
 # 自動節選
 auto_excerpt:
-  enable: true
-  length: 300
+  enable: false
+  length: 150
 
 ####    Share System    ####
 # -----------------------------------------

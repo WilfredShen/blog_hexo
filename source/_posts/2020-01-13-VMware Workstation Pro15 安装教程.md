@@ -7,6 +7,7 @@ tags:
 categories:
   - tech
   - Virtual-Machine
+description: 本文介绍了如何在 Windows 下安装 VMware Workstation Pro15，并提供了一些兼容性问题的处理方法...
 abbrlink: bbcd66d8
 date: 2020-01-13 00:40:00
 ---

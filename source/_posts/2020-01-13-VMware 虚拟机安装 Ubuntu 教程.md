@@ -8,6 +8,9 @@ tags:
 categories:
   - tech
   - Virtual-Machine
+description: >-
+  本文详细介绍了如何在 VMware Workstation Pro15 下安装
+  Ubuntu，包括“网络设置”、“磁盘分区”以及“文件系统”等等，并提供了国内的镜像源...
 abbrlink: a04c2f4
 date: 2020-01-13 01:20:00
 ---
