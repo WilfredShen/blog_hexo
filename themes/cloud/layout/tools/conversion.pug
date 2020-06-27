@@ -8,7 +8,7 @@
         :rows='attributes.inputTextarea.maxRows'
         :placeholder='attributes.inputTextarea.placeholder')
     #tools-control-area
-      a.tools-button(v-for='item in buttons' @click='handleeClick(item.value)')
+      a.tools-button(v-for='item in buttons' @click='handleClick(item.value)')
         i.fa(:class='item.class' v-if='item.class')
         span=' {{ item.text }}'
     #tools-output-area

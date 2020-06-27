@@ -6,7 +6,7 @@ tags:
   - MySQL
   - CentOS
 categories:
-  - install
+  - 安装
   - MySQL
 description: >-
   本文介绍如何在“阿里云学生服务器 CentOS 7.3 64位”下离线安装 MySQL，以及如何“配置环境变量”、“设置开机自启”、“修改 MySQL

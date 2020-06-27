@@ -2,11 +2,11 @@
 layout: post
 title: VMware Workstation Pro15 安装教程
 tags:
-  - Virtual-Machine
+  - 虚拟机
   - VMware
 categories:
-  - tech
-  - Virtual-Machine
+  - 安装
+  - 虚拟机
 description: 本文介绍了如何在 Windows 下安装 VMware Workstation Pro15，并提供了一些兼容性问题的处理方法...
 abbrlink: bbcd66d8
 date: 2020-01-13 00:40:00

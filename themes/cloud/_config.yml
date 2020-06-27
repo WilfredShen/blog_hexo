@@ -106,9 +106,9 @@ katex:
 # see https://github.com/knsv/mermaid
 # -------------------------------
 mermaid:
-  enable: false
+  enable: true
   # built-in themes: default/forest/dark/neutral
-  theme: default
+  theme: dark
 
 # Post info settings
 # ---------------

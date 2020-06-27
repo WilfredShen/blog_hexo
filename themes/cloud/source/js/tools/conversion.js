@@ -111,7 +111,7 @@ var pageContent = new Vue({
       settings.attributes.inputCodingSelected = settings.attributes.outputCodingSelected
       settings.attributes.outputCodingSelected = coding
     },
-    handleeClick: function (key) {
+    handleClick: function (key) {
       return this[key]()
     }
   },

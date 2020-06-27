@@ -6,7 +6,7 @@ tags:
   - Linux
   - CentOS
 categories:
-  - install
+  - 安装
   - Nginx
 description: >-
   本文介绍如何在“阿里云学生服务器 CentOS 7.3 64位”下离线安装 Nginx，以及如何“配置防火墙”、“配置 HTTP/HTTPS
@@ -43,7 +43,7 @@ cd /usr/local/nginx
 # 执行命令
 ./configure
 make
-make install
+make 安装
 ```
 
 上面这三条命令是基本操作，如果你的文件没有问题，那么这三条命令也不应该出问题。如果以前安装过（或自带） `Nginx` ，记得先卸载。

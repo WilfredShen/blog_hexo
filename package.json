@@ -10,7 +10,7 @@
     "gg": "hexo generate && gulp",
     "cg": "hexo clean && hexo generate",
     "gd": "gulp && hexo deploy",
-    "cgs": "hexo clean && hexo generate && hexo s",
+    "cgs": "hexo clean && hexo generate && hexo server",
     "cgg": "hexo clean && hexo generate && gulp",
     "cggd": "hexo clean && hexo generate && gulp && hexo deploy",
     "publish": "hexo clean && hexo generate && gulp && hexo deploy"
@@ -52,6 +52,7 @@
   "dependencies": {
     "hexo-abbrlink": "^2.0.5",
     "hexo-autonofollow": "^1.0.1",
+    "hexo-filter-mermaid-diagrams": "^1.0.5",
     "hexo-generator-baidu-sitemap": "^0.1.6",
     "hexo-generator-sitemap": "^2.0.0",
     "hexo-renderer-kramed": "^0.1.4",

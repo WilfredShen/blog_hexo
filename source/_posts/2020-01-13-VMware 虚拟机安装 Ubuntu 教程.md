@@ -2,12 +2,12 @@
 layout: post
 title: VMware 虚拟机安装 Ubuntu 教程
 tags:
-  - Virtual-Machine
+  - 虚拟机
   - Ubuntu
   - VMware
 categories:
-  - tech
-  - Virtual-Machine
+  - 安装
+  - 虚拟机
 description: >-
   本文详细介绍了如何在 VMware Workstation Pro15 下安装
   Ubuntu，包括“网络设置”、“磁盘分区”以及“文件系统”等等，并提供了国内的镜像源...

@@ -3,11 +3,10 @@ layout: post
 title: 此处打开 Anaconda Prompt
 tags:
   - Anaconda
-  - regedit
-  - trick
+  - 注册表
 categories:
-  - tech
-  - regedit
+  - 技术
+  - 注册表
 abbrlink: f75c6a82
 date: 2019-08-27 22:55:00
 ---

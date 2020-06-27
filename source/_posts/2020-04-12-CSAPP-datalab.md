@@ -5,7 +5,7 @@ tags:
   - CSAPP
   - Binary
 categories:
-  - tech
+  - 技术
   - Binary
 mathjax: true
 description: 本文详细拆解了 CSAPP 提供的 datalab，共计 15 道题目，提供了原题以及详尽的注释和解题思路，并保持了良好的排版提供良好的阅读体验...

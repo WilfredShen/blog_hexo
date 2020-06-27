@@ -1,4 +1,5 @@
 .DS_Store
+.vscode
 Thumbs.db
 db.json
 *.log
@@ -6,3 +7,4 @@ db.json
 /public/
 .deploy*/
 /tools/
+*.code-workspace

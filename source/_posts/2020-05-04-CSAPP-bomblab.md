@@ -3,10 +3,10 @@ layout: post
 title: CSAPP-bomblab
 tags:
   - CSAPP
-  - Assembly
+  - 汇编
 categories:
-  - tech
-  - Assembly
+  - 技术
+  - 汇编
 mathjax: true
 description: >-
   本文详细拆解了 CSAPP 提供的 bomblab，包括 6 个 phase 以及 secret
@@ -1214,7 +1214,7 @@ void phase_6(char* str)
  8048fa9:	89 c3                	mov    %eax,%ebx; %ebx = %eax
  8048fab:	8d 40 ff             	lea    -0x1(%eax),%eax; %eax = %eax-1
 
- ; if (%eax-1 > 1000)
+ ; if (%eax > 1000)
  8048fae:	3d e8 03 00 00       	cmp    $0x3e8,%eax
  8048fb3:	76 05                	jbe    8048fba <secret_phase+0x32>
  ;   explode_bomb()
