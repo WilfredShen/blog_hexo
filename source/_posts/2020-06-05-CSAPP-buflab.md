@@ -16,7 +16,7 @@ date: 2020-06-05 22:56:10
 | 选项     | 参数                                                         |
 | -------- | ------------------------------------------------------------ |
 | 系统环境 | Windows10 系统下 VMware 虚拟机 Ubuntu12.04 桌面版 32 位      |
-| 原址链接 | [http://csapp.cs.cmu.edu/3e/labs.html](http://csapp.cs.cmu.edu/3e/labs.html) |
+| 原址链接 | [https://csapp.cs.cmu.edu/3e/labs.html](https://csapp.cs.cmu.edu/3e/labs.html) |
 | `userid` | `Wilfred`                                                    |
 | `cookie` | `0x23a81b97`                                                 |
 
@@ -374,9 +374,9 @@ c3             /* ret  */
 
 至此，buflab 全部完成！
 
-[level0]: http://static.wilfredshen.cn/images/CSAPP-buflab/level0.png
-[level1]: http://static.wilfredshen.cn/images/CSAPP-buflab/level1.png
-[level2]: http://static.wilfredshen.cn/images/CSAPP-buflab/level2.png
-[level3-1]: http://static.wilfredshen.cn/images/CSAPP-buflab/level3-1.png
-[level3-2]: http://static.wilfredshen.cn/images/CSAPP-buflab/level3-2.png
-[level4]: http://static.wilfredshen.cn/images/CSAPP-buflab/level4.png
+[level0]: https://static.wilfredshen.cn/images/CSAPP-buflab/level0.png
+[level1]: https://static.wilfredshen.cn/images/CSAPP-buflab/level1.png
+[level2]: https://static.wilfredshen.cn/images/CSAPP-buflab/level2.png
+[level3-1]: https://static.wilfredshen.cn/images/CSAPP-buflab/level3-1.png
+[level3-2]: https://static.wilfredshen.cn/images/CSAPP-buflab/level3-2.png
+[level4]: https://static.wilfredshen.cn/images/CSAPP-buflab/level4.png

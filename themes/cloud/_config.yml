@@ -13,8 +13,8 @@ menu:
   关于: /about/ || fa fa-heart
   历史: /history/ || fa fa-file-text-o
   工具:
-    self: /tools/ || fa fa-wrench # 指定“工具”的图标和地址
-    编码转换 : /tools/conversion/ || fa fa-file-code-o
+    self: /tool/ || fa fa-wrench # 指定“工具”的图标和地址
+    编码转换 : /tool/conversion/ || fa fa-file-code-o
     LaTeX公式编辑器: https://www.latexlive.com || fa fa-file-code-o
 
 # Favicon
@@ -22,7 +22,7 @@ menu:
 favicon: /img/favicon.ico
 
 # default post img
-post-img : http://static.wilfredshen.cn/images/default/post.jpg
+post-img : https://static.wilfredshen.cn/images/default/post.jpg
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
@@ -113,14 +113,14 @@ mermaid:
 # Post info settings
 # ---------------
 avatar:
-  img: http://static.wilfredshen.cn/images/avatar/wilfred.gif
+  img: https://static.wilfredshen.cn/images/avatar/wilfred.gif
   effect: false # 頭像會一直轉圈
 
 # the banner image of index
-index_img: http://static.wilfredshen.cn/images/default/index.jpg
+index_img: https://static.wilfredshen.cn/images/default/index.jpg
 
 # if the banner of page not setting,it will show the top_img
-default_top_img: http://static.wilfredshen.cn/images/default/default-top-img.jpg
+default_top_img: https://static.wilfredshen.cn/images/default/default-top-img.jpg
 
 # the banner image of archive page
 archive_img:
@@ -150,12 +150,12 @@ cover:
   position: both
   # 當沒有設置cover時，默認的封面顯示
   default_cover:
-    - http://static.wilfredshen.cn/images/default/post.jpg
+    - https://static.wilfredshen.cn/images/default/post.jpg
 
 # if the photo link cannot connect,it will show that
 lodding_bg:
-  flink: http://static.wilfredshen.cn/images/default/friend_404.gif #404後圖片
-  post_page: http://static.wilfredshen.cn/images/default/404.jpg #404後圖片
+  flink: https://static.wilfredshen.cn/images/default/friend_404.gif #404後圖片
+  post_page: https://static.wilfredshen.cn/images/default/404.jpg #404後圖片
 #  post: /img/loading.gif ##加載動畫
 
 # A simple 404 page
@@ -270,7 +270,7 @@ valine:
   guest_info: nick,mail,link #valine comment header info
   recordIP: false # Record reviewer IP
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
-  bg: http://static.wilfredshen.cn/images/default/comment_bg.png # valine background
+  bg: https://static.wilfredshen.cn/images/default/comment_bg.png # valine background
   count: true # top_img顯示評論數
 
 # utterances
@@ -295,9 +295,9 @@ footer_copyright:
 
 ICP:
   enable: true
-  url: http://www.beian.miit.gov.cn/
+  url: https://beian.miit.gov.cn/
   text: 浙ICP备20012387号
-  icon: http://static.wilfredshen.cn/images/default/icp.png
+  icon: https://static.wilfredshen.cn/images/default/icp.png
 
 ####   Analysis    ####
 # ---------------
@@ -339,7 +339,7 @@ bing_site_verification:
 baidu_site_verification:
 
 # 360 Webmaster tools verification setting
-# see http://zhanzhang.so.com/
+# see https://zhanzhang.so.com/
 qihu_site_verification:
 
 # 打賞按鈕
@@ -398,7 +398,7 @@ tag_ui: # 留空或index
 
 # 設置網站背景
 # 可設置圖片 或者 顔色
-# 圖片格式 background: url(http://xxxxxx.com/xxx.jpg)
+# 圖片格式 background: url(https://xxxxxx.com/xxx.jpg)
 # 顔色 background: '#49B202'
 # 留空 顯示白色
 background: "#EAEAEA"
@@ -497,7 +497,7 @@ subtitle:
   # source: false 關閉調用
   # source: 1  調用金山詞霸的每日一句（簡體）
   # source: 2  調用一言網的一句話（簡體） #https://hitokoto.cn/
-  # source: 3  調用一句網（簡體） http://yijuzhan.com/
+  # source: 3  調用一句網（簡體） https://yijuzhan.com/
   # source: 4  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的內容
   source: false
@@ -526,10 +526,14 @@ aside:
   card_tags: false
   card_archives: false
   card_webinfo: true
+  card_leetcode: true
 
 # 網站公告
 announcement:
   content: 感谢访问本站，若喜欢请收藏 ^_^
+
+leetcode:
+  progress: https://static.wilfredshen.cn/images/leetcode-progress.png
 
 # busuanzi count for PV / UV in site
 # 訪問人數
@@ -589,7 +593,7 @@ darkmode:
 medium_zoom:
   enable: false
 
-# fancybox http://fancyapps.com/fancybox/3/
+# fancybox https://fancyapps.com/fancybox/3/
 fancybox:
   enable: true
 
@@ -667,7 +671,7 @@ site_source:
       - /js/main.js
       - /js/custom.js
     tools:
-      conversion: /js/tools/conversion.js
+      conversion: /js/tool/conversion.js
     vue: https://cdn.jsdelivr.net/npm/vue@2.6.11
 
 # CDN

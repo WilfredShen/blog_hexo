@@ -12,8 +12,8 @@ language: zh-CN
 timezone: '' # 网站时区。Hexo 默认使用您电脑的时区
 
 # URL 这一块一般可以设置的是 url 这个参数，比如我要设置绑定域名的，这里就需要填写我的域名信息
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://wilfredshen.cn
+## If your site is put in a subdirectory, set url as 'https://yoursite.com/child' and root as '/child/'
+url: https://wilfredshen.cn
 root: /
 # permalink: :year/:month/:day/:title/
 permalink: article/:abbrlink/
@@ -83,7 +83,7 @@ meta_generator: true
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
-## http://momentjs.com/docs/#/displaying/format/
+## https://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## Use post's date for updated date unless set in front-matter

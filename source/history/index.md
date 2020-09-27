@@ -16,8 +16,11 @@ type: "history"
 
 > 2020 年 4 月 14 日，正式命名主题为 Cloud，继承自 [Butterfly](https://github.com/jerryc127/hexo-theme-butterfly)
 
+* 2020-08-31
+  1. 图链全面更换为 https 链接，同时支持 HTTP/2 协议
+  2. 添加 LeetCode 卡片，记录刷题进度（绿：通过，红：提交未通过，橙：未提交，灰：没有该题）
 * 2020-05-08
-  1. 使用 Vue 重构“工具”
+  1. 使用 Vue 重构“工具”页面
 * 2020-05-07
   1. 强制重定向 http 至 https
   2. 提交**百度**（Baidu）、**必应**（ Bing ）搜索，等待收录

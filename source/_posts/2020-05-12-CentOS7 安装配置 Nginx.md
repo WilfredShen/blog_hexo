@@ -27,7 +27,7 @@ date: 2020-05-12 12:45:00
 
 ## 下载 tar 包并解压缩
 
-博主采用离线安装的方式，首先下载 Nginx 的 tar 包，地址：[http://nginx.org/en/download.html](http://nginx.org/en/download.html)，选择 `nginx-1.16.1.tar.gz`，当然可以选择其他版本。
+博主采用离线安装的方式，首先下载 Nginx 的 tar 包，地址：[https://nginx.org/en/download.html](https://nginx.org/en/download.html)，选择 `nginx-1.16.1.tar.gz`，当然可以选择其他版本。
 
 然后使用 `scp` 命令上传至服务器，选择在服务器使用 `wget` 命令下载也可以。
 

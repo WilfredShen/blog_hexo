@@ -22,8 +22,8 @@ date: 2020-01-13 01:20:00
 
 博主已经做过VMware安装教程以及兼容性处理，以下提供Ubuntu下载链接：
 
-* [网易镜像：http://mirrors.163.com/ubuntu-releases/precise/ubuntu-12.04.5-desktop-i386.iso](http://mirrors.163.com/ubuntu-releases/precise/ubuntu-12.04.5-desktop-i386.iso)
-* [官网原址：http://releases.ubuntu.com/12.04/ubuntu-12.04.5-desktop-i386.iso](http://releases.ubuntu.com/12.04/ubuntu-12.04.5-desktop-i386.iso)
+* [网易镜像：https://mirrors.163.com/ubuntu-releases/precise/](https://mirrors.163.com/ubuntu-releases/precise/)
+* [官网原址：https://releases.ubuntu.com/12.04/](https://releases.ubuntu.com/12.04/)
 
 ## 正式安装
 
@@ -97,23 +97,23 @@ date: 2020-01-13 01:20:00
 
 ![][20-安装完成]
 
-[01-新建虚拟机]: http://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/01-%E6%96%B0%E5%BB%BA%E8%99%9A%E6%8B%9F%E6%9C%BA.png
-[02-硬件兼容性]: http://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/02-%E7%A1%AC%E4%BB%B6%E5%85%BC%E5%AE%B9%E6%80%A7.png
-[03-空白硬盘]: http://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/03-%E7%A9%BA%E7%99%BD%E7%A1%AC%E7%9B%98.png
-[04-系统选择]: http://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/04-%E7%B3%BB%E7%BB%9F%E9%80%89%E6%8B%A9.png
-[05-安装位置]: http://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/04-%E7%B3%BB%E7%BB%9F%E9%80%89%E6%8B%A9.png
-[06-处理器选择]: http://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/06-%E5%A4%84%E7%90%86%E5%99%A8%E9%80%89%E6%8B%A9.png
-[07-内存选择]: http://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/07-%E5%86%85%E5%AD%98%E9%80%89%E6%8B%A9.png
-[08-网络选择]: http://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/08-%E7%BD%91%E7%BB%9C%E9%80%89%E6%8B%A9.png
-[09-磁盘选择-1]: http://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/09-%E7%A3%81%E7%9B%98%E9%80%89%E6%8B%A9-1.png
-[10-磁盘选择-2]: http://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/10-%E7%A3%81%E7%9B%98%E9%80%89%E6%8B%A9-2.png
-[11-选择系统镜像]: http://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/11-%E9%80%89%E6%8B%A9%E7%B3%BB%E7%BB%9F%E9%95%9C%E5%83%8F.png
-[12-选择语言]: http://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/12-%E9%80%89%E6%8B%A9%E8%AF%AD%E8%A8%80.png
-[13-准备安装]: http://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/13-%E5%87%86%E5%A4%87%E5%AE%89%E8%A3%85.png
-[14-自定义磁盘分区]: http://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/14-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA.png
-[15-swap]: http://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/15-swap.png
-[16-boot]: http://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/16-boot.png
-[17-home]: http://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/17-home.png
-[18-root]: http://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/18-root.png
-[19-完成分区]: http://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/19-%E5%AE%8C%E6%88%90%E5%88%86%E5%8C%BA.png
-[20-安装完成]: http://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/20-%E5%AE%89%E8%A3%85%E5%AE%8C%E6%88%90.png
+[01-新建虚拟机]: https://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/01-%E6%96%B0%E5%BB%BA%E8%99%9A%E6%8B%9F%E6%9C%BA.png
+[02-硬件兼容性]: https://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/02-%E7%A1%AC%E4%BB%B6%E5%85%BC%E5%AE%B9%E6%80%A7.png
+[03-空白硬盘]: https://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/03-%E7%A9%BA%E7%99%BD%E7%A1%AC%E7%9B%98.png
+[04-系统选择]: https://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/04-%E7%B3%BB%E7%BB%9F%E9%80%89%E6%8B%A9.png
+[05-安装位置]: https://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/04-%E7%B3%BB%E7%BB%9F%E9%80%89%E6%8B%A9.png
+[06-处理器选择]: https://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/06-%E5%A4%84%E7%90%86%E5%99%A8%E9%80%89%E6%8B%A9.png
+[07-内存选择]: https://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/07-%E5%86%85%E5%AD%98%E9%80%89%E6%8B%A9.png
+[08-网络选择]: https://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/08-%E7%BD%91%E7%BB%9C%E9%80%89%E6%8B%A9.png
+[09-磁盘选择-1]: https://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/09-%E7%A3%81%E7%9B%98%E9%80%89%E6%8B%A9-1.png
+[10-磁盘选择-2]: https://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/10-%E7%A3%81%E7%9B%98%E9%80%89%E6%8B%A9-2.png
+[11-选择系统镜像]: https://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/11-%E9%80%89%E6%8B%A9%E7%B3%BB%E7%BB%9F%E9%95%9C%E5%83%8F.png
+[12-选择语言]: https://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/12-%E9%80%89%E6%8B%A9%E8%AF%AD%E8%A8%80.png
+[13-准备安装]: https://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/13-%E5%87%86%E5%A4%87%E5%AE%89%E8%A3%85.png
+[14-自定义磁盘分区]: https://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/14-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA.png
+[15-swap]: https://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/15-swap.png
+[16-boot]: https://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/16-boot.png
+[17-home]: https://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/17-home.png
+[18-root]: https://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/18-root.png
+[19-完成分区]: https://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/19-%E5%AE%8C%E6%88%90%E5%88%86%E5%8C%BA.png
+[20-安装完成]: https://static.wilfredshen.cn/images/VMware%20%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%20Ubuntu%20%E6%95%99%E7%A8%8B/20-%E5%AE%89%E8%A3%85%E5%AE%8C%E6%88%90.png

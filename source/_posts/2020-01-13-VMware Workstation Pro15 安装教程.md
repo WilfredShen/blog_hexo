@@ -40,7 +40,7 @@ date: 2020-01-13 00:40:00
 
 正式安装十分简单，跟着安装程序走就可以
 
-[01-卸载界面]: http://static.wilfredshen.cn/images/VMware%20Workstation%20Pro15%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/01-%E5%8D%B8%E8%BD%BD%E7%95%8C%E9%9D%A2.png
-[02-禁用主机服务]: http://static.wilfredshen.cn/images/VMware%20Workstation%20Pro15%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/02-%E7%A6%81%E7%94%A8%E4%B8%BB%E6%9C%BA%E6%9C%8D%E5%8A%A1.png
-[03-系统摘要]: http://static.wilfredshen.cn/images/VMware%20Workstation%20Pro15%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/03-%E7%B3%BB%E7%BB%9F%E6%91%98%E8%A6%81.png
-[04-管理员运行cmd]: http://static.wilfredshen.cn/images/VMware%20Workstation%20Pro15%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/04-%E7%AE%A1%E7%90%86%E5%91%98%E8%BF%90%E8%A1%8Ccmd.png
+[01-卸载界面]: https://static.wilfredshen.cn/images/VMware%20Workstation%20Pro15%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/01-%E5%8D%B8%E8%BD%BD%E7%95%8C%E9%9D%A2.png
+[02-禁用主机服务]: https://static.wilfredshen.cn/images/VMware%20Workstation%20Pro15%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/02-%E7%A6%81%E7%94%A8%E4%B8%BB%E6%9C%BA%E6%9C%8D%E5%8A%A1.png
+[03-系统摘要]: https://static.wilfredshen.cn/images/VMware%20Workstation%20Pro15%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/03-%E7%B3%BB%E7%BB%9F%E6%91%98%E8%A6%81.png
+[04-管理员运行cmd]: https://static.wilfredshen.cn/images/VMware%20Workstation%20Pro15%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/04-%E7%AE%A1%E7%90%86%E5%91%98%E8%BF%90%E8%A1%8Ccmd.png

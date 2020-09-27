@@ -30,7 +30,7 @@ date: 2020-05-14 16:00:00
 | `Select OS Version`       | `Red Hat Enterprise Linux 7 / Oracle Linux 7 (x86, 64-bit)`  |
 | `Download Packages`       | `Compressed TAR Archive (mysql-5.7.30-el7-x86_64.tar.gz) 693.6M`<br />`MD5: 0373ad13127e93ea6a06ab09771f2a99` |
 
-不过官网下载太慢了，这里放一个[中科大的镜像](http://mirrors.ustc.edu.cn/mysql-ftp/Downloads/MySQL-5.7/)，我的 `100 Mbps` 带宽下载速度能拉满。镜像页面版本比较多，可以直接搜索 `mysql-5.7.30-el7-x86_64.tar.gz`。
+不过官网下载太慢了，这里放一个[中科大的镜像](https://mirrors.ustc.edu.cn/mysql-ftp/Downloads/MySQL-5.7/)，我的 `100 Mbps` 带宽下载速度能拉满。镜像页面版本比较多，可以直接搜索 `mysql-5.7.30-el7-x86_64.tar.gz`。
 
 下载完了记得校验一下，由于 `MD5` 非常容易碰撞，一定记得要在靠谱的源用 `https` 下载。
 
@@ -181,7 +181,7 @@ source /etc/profile
 [Unit]
 Description=MySQL Server
 Documentation=man:mysqld(8)
-Documentation=http://dev.mysql.com/doc/refman/en/using-systemd.html
+Documentation=https://dev.mysql.com/doc/refman/en/using-systemd.html
 After=network.target
 After=syslog.target
 
